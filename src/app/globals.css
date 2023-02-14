@@ -134,3 +134,17 @@ a {
   color: #fff;
   text-shadow: 0 0 10px #000;
 }
+
+.wrapFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+.wrapFooter p {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}

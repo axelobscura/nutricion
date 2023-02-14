@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -20,6 +21,7 @@ export default function Home() {
           <h1>Curso Latinoamericano en Nutrición y Alimentación Geriátrica</h1>
           <h4>CURSO DE NUTRICIÓN DEL ADULTO MAYOR</h4>
           <h3>16 y 17 de Marzo 2023<FaBeer /></h3>
+          <Link href='/registro'>REGISTRO</Link>
         </Col>
       </Row>
     </Container>

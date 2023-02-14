@@ -9,6 +9,7 @@ export default function Home() {
     <Container className='entrada' fluid>
       <Row>
         <Col>
+          <p>Asociación Mexicana de Gerontología y Geriatría A.C.</p>
           <h1>Curso Latinoamericano en Nutrición y Alimentación Geriátrica</h1>
           <h4>CURSO DE NUTRICIÓN DEL ADULTO MAYOR</h4>
           <h3>16 y 17 de Marzo 2023</h3>

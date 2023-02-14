@@ -141,6 +141,19 @@ a {
   text-shadow: 0 0 10px #000;
 }
 
+.wrapMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+.wrapMenu a {
+  padding: 5px;
+  margin-right: 5px;
+}
+
 .wrapFooter {
   position: fixed;
   bottom: 0;

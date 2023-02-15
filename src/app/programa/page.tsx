@@ -10,18 +10,11 @@ export default function Programa() {
   return (
     <Container className='programa' fluid>
       <Row>
-        
         <Col className='dos'>
-          <Image
-            src='/logo-amgg-blanco.png'
-            width='200'
-            height='150'
-            alt='Curso Latinoamericano en Nutrición y Alimentación Geriátrica'
-            style={{marginBottom: '20px'}}
-          />
-          <h1>Curso Latinoamericano en<br/>Nutrición y Alimentación Geriátrica</h1>
+          
         </Col>
         <Col className='uno'>
+          <h1>Curso Latinoamericano en<br/>Nutrición y Alimentación Geriátrica</h1>
           <p className='objetivo'><b>Objetivo general</b><br/>Aportar los conocimientos teóricos y prácticos básicos para el proceso de atención nutricia en las personas adultas mayores (PAM) (institucionalizado, en hospital y de la comunidad), para promover un envejecimiento saludable y activo.</p>
           <h5><BiChevronRight/> Profesor titular:</h5>
           <div className='dr'>
@@ -50,6 +43,7 @@ export default function Programa() {
             <p>Nutriología, maestría en ciencias de la Nutrición, profesora Universidad Iberoamericana, CDMX</p>
           </div>
         </Col>
+        <Col></Col>
       </Row>
     </Container>
   )

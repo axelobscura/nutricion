@@ -51,7 +51,10 @@ export default function Registro() {
     <Container className='registro' fluid>
       <Row>
         <Col></Col>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={6} className='reg'>
+          <h1>Curso Latinoamericano en Nutrición y Alimentación Geriátrica</h1>
+          <h3>REGISTRO</h3>
+          <hr/>
           {enviado === 'false' &&
           <Form onSubmit={registro}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

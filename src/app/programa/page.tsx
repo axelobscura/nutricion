@@ -11,7 +11,7 @@ export default function Programa() {
     <Container className='programa' fluid>
       <Row>
         <Col></Col>
-        <Col className='uno'>
+        <Col xs={12} md={6} className='uno'>
           <h1>Curso Latinoamericano en Nutrición y Alimentación Geriátrica</h1>
           <p className='objetivo'><b>Objetivo general</b><br/>Aportar los conocimientos teóricos y prácticos básicos para el proceso de atención nutricia en las personas adultas mayores (PAM) (institucionalizado, en hospital y de la comunidad), para promover un envejecimiento saludable y activo.</p>
           <h5><BiChevronRight/> Profesor titular:</h5>

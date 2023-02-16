@@ -117,7 +117,7 @@ a {
   text-align: center;
 }
 
-.entrada h1 {
+h1 {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px #000;
@@ -190,7 +190,14 @@ a {
   overflow: hidden;
 }
 
-.programa .uno, .programa .cero {
+.programa .uno {
+  overflow: scroll;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.programa .cero {
   width: 100%;
   height: 80vh;
   overflow: scroll;
@@ -236,11 +243,13 @@ a {
   padding: 12px;
   margin-bottom: 10px;
   border: 1px solid rgb(32, 46, 80);
+  background-color: rgb(25, 35, 56);
   border-radius: 2px;
-  color: rgb(25, 35, 56);
+  color: rgb(197, 212, 236);
   font-size: 1rem;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .programa .dr {
@@ -271,8 +280,9 @@ a {
 }
 
 p.objetivo {
-  color: rgb(25, 35, 56);;
-  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 35, 56);
+  padding: 10px;
   text-align: justify;
   font-size: 0.9rem;
 }
@@ -292,18 +302,27 @@ text-shadow: 0 0 10px #000;
 }
 
 .registro {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  margin-top: 13vh;
-
+  padding: 10vh 0;
+  
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  background: url(/bkg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
-.registro .row {
-  width: 100%;
+.registro .reg {
+  overflow: scroll;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .exito h3 {

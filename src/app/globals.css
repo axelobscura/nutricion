@@ -290,3 +290,16 @@ p.objetivo {
 color: #fff;
 text-shadow: 0 0 10px #000;
 }
+
+.registro {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.registro .row {
+  width: 100%;
+}

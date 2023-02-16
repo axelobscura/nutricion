@@ -6,8 +6,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { useCreateRegistro } from 'lib/swr-hooks';
-
 export default function Registro() {
 
   const [ enviado, setEnviado ] = useState('false');
@@ -52,14 +50,9 @@ export default function Registro() {
   return (
     <Container className='registro' fluid>
       <Row>
-        <Col>
-          <h1>REGISTRO - {enviado === 'false' ? 'no enviado' : 'enviado'}</h1>
-          <hr/>
-        </Col>
-      </Row>
-      <Row>
         <Col></Col>
         <Col xs={12} md={6}>
+          {enviado === 'false' &&
           <Form onSubmit={registro}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Nombre:</Form.Label>
@@ -105,8 +98,14 @@ export default function Registro() {
                 <option>Masculino</option>
               </Form.Select>
             </Form.Group>
-            <Button type="submit">REGISTRARSE</Button>
+            <Button type="submit">REGISTRARSE Y PAGAR</Button>
           </Form>
+          }
+          {enviado === 'true' &&
+          <div className='exito'>
+            <h3>Gracias sus datos han sido enviados con éxito!</h3>
+          </div>
+          }
         </Col>
         <Col></Col>
       </Row>

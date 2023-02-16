@@ -330,6 +330,12 @@ text-shadow: 0 0 10px #000;
   margin-bottom: 10vh;
 }
 
+.registro h3 {
+  background: rgb(25, 35, 56);
+  padding: 10px;
+  color: #fff;
+}
+
 .exito h3 {
   text-align: center;
 }

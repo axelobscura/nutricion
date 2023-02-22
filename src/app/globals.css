@@ -119,19 +119,16 @@ h1 {
 .entrada h3 {
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 10px #000;
 }
 
 .entrada h4 {
   font-weight: 100;
   color: #fff;
-  text-shadow: 0 0 10px #000;
 }
 
 .entrada p {
   font-weight: 100;
   color: #fff;
-  text-shadow: 0 0 10px #000;
 }
 
 .wrapMenu {
@@ -333,6 +330,10 @@ text-shadow: 0 0 10px #000;
   font-weight: bold !important;
 }
 
+.entrada {
+  padding: 0;
+}
+
 .entrada .banner {
   background-image:
     linear-gradient(to bottom, rgba(25, 31, 64, 0.52), rgba(49, 122, 218, 0.73)),
@@ -342,4 +343,30 @@ text-shadow: 0 0 10px #000;
   -o-background-size: cover;
   background-size: cover;
   padding: 120px 0;
+}
+
+.entrada .objetivo {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.entrada .objetivo h3 {
+  background: #004B93;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 30px;
+}
+
+.entrada .objetivo p {
+  color: #004B93;
+  padding: 20px;
+}
+
+.entrada .temario {
+  background: #004B93;
+  text-align: center;
+  padding: 50px 0;
 }

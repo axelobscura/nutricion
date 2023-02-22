@@ -7,15 +7,8 @@ import Col from 'react-bootstrap/Col'
 export default function Home() {
   return (
     <Container className='entrada' fluid>
-      <Row>
+      <Row className='banner'>
         <Col>
-          <Image
-            src='/logo-amgg-blanco.png'
-            width='170'
-            height='120'
-            alt='Curso Latinoamericano en Nutrición y Alimentación Geriátrica'
-            style={{marginBottom: '20px'}}
-          />
           <h1>Curso Latinoamericano en<br/>Nutrición y Alimentación Geriátrica</h1>
           <h4 style={{marginBottom: '20px'}}>CURSO DE NUTRICIÓN DEL ADULTO MAYOR</h4>
           <h3>16 y 17 de Marzo 2023</h3>

@@ -158,6 +158,15 @@ p {
   background: #153147;
 }
 
+.wrapFooter .row {
+  display: flex;
+  align-items: center;
+}
+
+.wrapFooter .row a {
+  color: #fff;
+}
+
 .wrapFooter p {
   text-align: center;
   padding: 15px;
@@ -466,7 +475,7 @@ a.btn_login {
 }
 
 /* Mobile and Tablet */
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .entradaTxt {
     max-width: 200px;
     margin-left: 10px;
@@ -477,5 +486,32 @@ a.btn_login {
   }
   .entradaTxt h4 {
     display: none;
+  }
+}
+
+@media (max-width: 500px && max-width: 1024px) {
+  .entradaTxt {
+    max-width: 500px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .entradaTxt h1 {
+    font-size: 1.2rem;
+    padding-top: 0;
+  }
+  .entradaTxt h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .entradaTxt {
+    max-width: 500px;
+    margin-left: 10px;
+    margin-top: 70px;
+  }
+  .entradaTxt h1 {
+    font-size: 2rem;
+    padding-top: 0;
   }
 }

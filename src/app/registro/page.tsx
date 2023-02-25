@@ -53,7 +53,7 @@ export default function Registro() {
       <Banner/>
       <Row>
         <Col></Col>
-        <Col xs={12} md={6} className='reg' style={{ padding: '30px'}}>
+        <Col xs={12} md={6} className='reg' style={{ padding: '70px 0'}}>
           <h3>REGISTRO</h3>
           <hr/>
           {enviado === 'false' &&

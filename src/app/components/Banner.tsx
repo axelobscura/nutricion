@@ -13,7 +13,7 @@ export default function Banner() {
       <Card.ImgOverlay>
         <div className='entradaTxt'>
           <Card.Title>
-            <h1>CURSO<br/>LATINOAMERICANO<br/>EN NUTRICIÓN<br/>Y ALIMENTACIÓN<br/>GERIÁTRICA</h1>
+            <h1>CURSO LATINOAMERICANO<br/>EN NUTRICIÓN<br/>Y ALIMENTACIÓN<br/>GERIÁTRICA</h1>
           </Card.Title>
           <h4 style={{marginBottom: '20px'}}>16 y 17 de Marzo 2023<br/>Modalidad: On Line / On Demand<br/>Horario: 09:00 a 14:00 hrs.<br/>Costo: $300</h4>
           <Link href='/registro' className='btn_login'>INSCRIBIRSE</Link>

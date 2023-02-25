@@ -50,7 +50,7 @@ export default function Registro() {
 
   return (
     <Container className='registro' fluid>
-      <Banner/>
+      <Banner boton="registro"/>
       <Row>
         <Col></Col>
         <Col xs={12} md={6} className='reg' style={{ padding: '70px 0'}}>

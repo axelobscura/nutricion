@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form'
 export default function Login() {
   return (
     <Container className='registro' fluid>
-      <Banner/>
+      <Banner boton="inicio"/>
       <Row>
         <Col></Col>
         <Col xs={12} md={6} className='reg' style={{ padding: '70px 0'}}>

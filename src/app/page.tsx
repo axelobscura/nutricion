@@ -9,7 +9,7 @@ import Banner from './components/Banner'
 export default function Home() {
   return (
     <Container className='entrada' fluid>
-      <Banner/>
+      <Banner boton="inicio"/>
       <Container className='objetivo'>
         <Row>
           <Col>

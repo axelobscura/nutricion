@@ -10,10 +10,12 @@ import Col from 'react-bootstrap/Col'
 import Banner from '../components/Banner'
 import CheckoutForm from "../components/CheckoutForm"
 
+let strpe_key: string | any = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(strpe_key);
 
 export default function Registro() {
   const [ enviado, setEnviado ] = useState('false');
@@ -30,11 +32,11 @@ export default function Registro() {
       .then((data) => setClientSecret(data.clientSecret));
   }, []);
 
-  const appearance = {
+  const appearance: any = {
     theme: 'night',
   };
 
-  const options = {
+  const options: any = {
     clientSecret,
     appearance,
   };

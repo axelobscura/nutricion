@@ -2,12 +2,14 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
-import CheckoutForm from "../components/CheckoutForm";
+import CheckoutForm from "./CheckoutForm";
+
+let strpe_key: string | any = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(strpe_key);
 
 export default function App() {
   const [clientSecret, setClientSecret] = React.useState("");
@@ -26,7 +28,7 @@ export default function App() {
   const appearance = {
     theme: 'night',
   };
-  const options = {
+  const options: any = {
     clientSecret,
     appearance,
   };

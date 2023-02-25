@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Banner from '../components/Banner'
 
 export default function Registro() {
 
@@ -49,10 +50,10 @@ export default function Registro() {
 
   return (
     <Container className='registro' fluid>
+      <Banner/>
       <Row>
         <Col></Col>
-        <Col xs={12} md={6} className='reg'>
-          <h1>Curso Latinoamericano en Nutrición y Alimentación Geriátrica</h1>
+        <Col xs={12} md={6} className='reg' style={{ padding: '30px'}}>
           <h3>REGISTRO</h3>
           <hr/>
           {enviado === 'false' &&
@@ -101,7 +102,7 @@ export default function Registro() {
                 <option>Masculino</option>
               </Form.Select>
             </Form.Group>
-            <Button type="submit">REGISTRARSE Y PAGAR</Button>
+            <Button type="submit" className="btn_login">REGISTRARSE</Button>
           </Form>
           }
           {enviado === 'true' &&

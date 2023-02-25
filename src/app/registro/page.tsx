@@ -58,9 +58,22 @@ export default function Registro() {
           <hr/>
           {enviado === 'false' &&
           <Form onSubmit={registro}>
+            <Form.Group className="mb-3">
+              <Form.Label>Título:</Form.Label>
+              <Form.Select name='titulo'>
+                <option>Dr.</option>
+                <option>Dra.</option>
+                <option>Lic.</option>
+                <option>Mtro.</option>
+                <option>Mtra.</option>
+                <option>Ing.</option>
+                <option>Psic.</option>
+                <option>Otro</option>
+              </Form.Select>
+            </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Nombre:</Form.Label>
-              <Form.Control type="text" name="nombre" placeholder="Ingrese su nombre" />
+              <Form.Label>Nombre(s):</Form.Label>
+              <Form.Control type="text" name="nombre" placeholder="Ingrese su nombre completo" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Apellido paterno:</Form.Label>
@@ -74,19 +87,7 @@ export default function Registro() {
               <Form.Label>Correo electrónico:</Form.Label>
               <Form.Control type="email" name="email" placeholder="Ingrese su correo electrónico" />
             </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Título:</Form.Label>
-              <Form.Select name='titulo'>
-                <option>Dr.</option>
-                <option>Dra.</option>
-                <option>Lic.</option>
-                <option>Mtro.</option>
-                <option>Mtra.</option>
-                <option>Ing.</option>
-                <option>Psic.</option>
-                <option>Otro.</option>
-              </Form.Select>
-            </Form.Group>
+            
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Teléfono:</Form.Label>
               <Form.Control type="text" name="telefono" placeholder="Ingrese su teléfono" />

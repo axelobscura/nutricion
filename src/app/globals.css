@@ -435,18 +435,19 @@ a.btn_login {
 .entradaTxt h1 {
   font-weight: 100;
   color: #fff;
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 10px;
   text-align: center;
   text-shadow: 0 0 10px #000;
-  font-size:3rem;
+  font-size: 2.5rem;
 }
 
 .entradaTxt h4 {
   font-weight: bold;
   color: #004B93 !important;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
+  text-shadow: 0 0 10px white;
 }
 
 .objetivo.container p {

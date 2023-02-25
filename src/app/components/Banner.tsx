@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Image from 'next/image'
 import Card from 'react-bootstrap/Card'
 
-export default function Banner({ boton }: { boton: string }) {
+export default function Banner({ boton }: { boton: string | unknown }) {
   return (
     <Card className="text-white">
       <Card.Img src="/slider.jpeg" alt="Card image" />

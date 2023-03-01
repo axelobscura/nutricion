@@ -108,11 +108,11 @@ export default function Registro() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Nombre(s):</Form.Label>
-              <Form.Control type="text" name="nombre" placeholder="Ingrese su nombre completo" />
+              <Form.Control type="text" name="nombre" placeholder="Ingrese su nombre completo" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Apellido paterno:</Form.Label>
-              <Form.Control type="text" name="apaterno" placeholder="Ingrese su apellido paterno" />
+              <Form.Control type="text" name="apaterno" placeholder="Ingrese su apellido paterno" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Apellido materno:</Form.Label>
@@ -120,9 +120,8 @@ export default function Registro() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Correo electrónico:</Form.Label>
-              <Form.Control type="email" name="email" placeholder="Ingrese su correo electrónico" />
+              <Form.Control type="email" name="email" placeholder="Ingrese su correo electrónico" required/>
             </Form.Group>
-            
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Teléfono:</Form.Label>
               <Form.Control type="text" name="telefono" placeholder="Ingrese su teléfono" />

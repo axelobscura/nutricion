@@ -433,13 +433,13 @@ a.btn_login {
 }
 
 .entradaTxt h1 {
-  font-weight: 100;
+  font-weight: bold;
   color: #fff;
   padding-top: 0;
   padding-bottom: 10px;
   text-align: center;
   text-shadow: 0 0 10px #000;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .entradaTxt h4 {
@@ -492,19 +492,19 @@ a.btn_login {
 }
 
 .form-control, .form-select {
-  border-radius: 0;
+  border-radius: 50px;
   padding: 10px;
   background: #f2f2f2;
 }
 
 /* Mobile and Tablet */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .entradaTxt {
-    max-width: 200px;
+    max-width: 500px;
     margin-left: 10px;
   }
   .entradaTxt h1 {
-    font-size: 10px;
+    font-size: 2rem;
     padding-top: 0;
   }
   .entradaTxt h4 {
@@ -512,7 +512,7 @@ a.btn_login {
   }
 }
 
-@media (max-width: 500px && max-width: 1024px) {
+@media (max-width: 590px) {
   .entradaTxt {
     max-width: 500px;
     margin-left: 10px;
@@ -527,14 +527,26 @@ a.btn_login {
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1000px) {
   .entradaTxt {
-    max-width: 500px;
+    max-width: 700px;
     margin-left: 10px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .entradaTxt h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .entradaTxt {
+    max-width: 700px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .entradaTxt h1 {
+    font-size: 3rem;
     padding-top: 0;
   }
 }

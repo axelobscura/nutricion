@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Banner from '../components/Banner'
 import CheckoutForm from "../components/CheckoutForm"
+import { BiChevronRight } from "react-icons/bi"
 
 let strpe_key: string | any = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
@@ -95,7 +96,7 @@ export default function Registro() {
           {enviado === 'false' &&
           <Form onSubmit={registro}>
             <Form.Group className="mb-3">
-              <Form.Label>Título:</Form.Label>
+              <Form.Label><BiChevronRight /> Título:</Form.Label>
               <Form.Select name='titulo'>
                 <option>Dr.</option>
                 <option>Dra.</option>
@@ -108,39 +109,39 @@ export default function Registro() {
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Profesión/especialidad:</Form.Label>
+              <Form.Label><BiChevronRight /> Profesión/especialidad:</Form.Label>
               <Form.Control type="text" name="profesion" placeholder="Ingrese su profesión/especialidad" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Nombre(s):</Form.Label>
+              <Form.Label><BiChevronRight /> Nombre(s):</Form.Label>
               <Form.Control type="text" name="nombre" placeholder="Ingrese su nombre completo" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Apellido paterno:</Form.Label>
+              <Form.Label><BiChevronRight /> Apellido paterno:</Form.Label>
               <Form.Control type="text" name="apaterno" placeholder="Ingrese su apellido paterno" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Apellido materno:</Form.Label>
+              <Form.Label><BiChevronRight /> Apellido materno:</Form.Label>
               <Form.Control type="text" name="amaterno" placeholder="Ingrese su apellido materno" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Correo electrónico:</Form.Label>
+              <Form.Label><BiChevronRight /> Correo electrónico:</Form.Label>
               <Form.Control type="email" name="email" placeholder="Ingrese su correo electrónico" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Confirme su correo electrónico:</Form.Label>
+              <Form.Label><BiChevronRight /> Confirme su correo electrónico:</Form.Label>
               <Form.Control type="email" name="confirmeEmail" placeholder="Vuelva a ingresar su correo electrónico" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Teléfono:</Form.Label>
+              <Form.Label><BiChevronRight /> Teléfono:</Form.Label>
               <Form.Control type="text" name="telefono" placeholder="Ingrese su teléfono" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Fecha de nacimiento:</Form.Label>
+              <Form.Label><BiChevronRight /> Fecha de nacimiento:</Form.Label>
               <Form.Control type="date" name="fnacimiento" placeholder="Ingrese su teléfono" />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Sexo:</Form.Label>
+              <Form.Label><BiChevronRight /> Sexo:</Form.Label>
               <Form.Select name='sexo'>
                 <option>Femenino</option>
                 <option>Masculino</option>

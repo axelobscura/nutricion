@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Banner from './components/Banner'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -84,6 +85,21 @@ export default function Home() {
               <h4>Maestra Victoria Ramos Barragán</h4>
               <p>Nutriología, maestría en ciencias de la Nutrición, profesora Universidad Iberoamericana, CDMX.</p>
             </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div style={{textAlign: 'center', marginBottom: '20px'}}>
+              <Link href='https://amgg.com.mx/nutricion/poster_curso_nutricion_2023.pdf' className='btn_login'>Descargar aquí programa en PDF</Link>
+            </div>
+            <div style={{width: '100%', height: '2000px', position: 'relative'}}>
+              <Image
+                fill
+                src='https://amgg.com.mx/nutricion/poster_curso_nutricion_2023.jpg'
+                alt='Curso Latinoamericano en Nutrición y Alimentación Geriátrica'
+                sizes='100vw'
+              />
+            </div>
           </Col>
         </Row>
       </Container>

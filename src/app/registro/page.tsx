@@ -96,7 +96,7 @@ export default function Registro() {
       
 
       setEnviado('true');
-      // window.location.href = "https://buy.stripe.com/4gwaEI3GE11UaVGcMM";
+      window.location.href = "https://buy.stripe.com/4gwaEI3GE11UaVGcMM";
       const json = await res.json()
       if (!res.ok) throw Error(json.message)
     } catch(e: any){

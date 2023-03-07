@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col'
 import Banner from '../components/Banner'
 import CheckoutForm from "../components/CheckoutForm"
 import { BiChevronRight } from "react-icons/bi"
+import axios from 'axios'
 
 let strpe_key: string | any = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
@@ -22,6 +23,7 @@ export default function Registro() {
   const [ enviado, setEnviado ] = useState('false');
   const [clientSecret, setClientSecret] = useState("");
 
+  /*
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
     fetch("/api/create-payment-intent", {
@@ -37,6 +39,7 @@ export default function Registro() {
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
   }, []);
+  */
 
   const appearance: any = {
     theme: 'night',
@@ -59,6 +62,7 @@ export default function Registro() {
     let sexo = e.target.sexo.value;
     let activo = 0;
     try {
+
       const res = await fetch('/api/create-registro', {
         method: 'POST',
         headers: {
@@ -76,8 +80,23 @@ export default function Registro() {
             activo
         }),
       })
+
+      
+      const response = await axios.post('https://amgg.com.mx/nutricion/mail/index.php', {
+        nombre: nombre,
+        apaterno: apaterno,
+        email: email,
+      })
+      .then(function (response) {
+        console.log('RESPUESTA DE AXIOS: '+JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      
+
       setEnviado('true');
-      window.location.href = "https://buy.stripe.com/4gwaEI3GE11UaVGcMM";
+      // window.location.href = "https://buy.stripe.com/4gwaEI3GE11UaVGcMM";
       const json = await res.json()
       if (!res.ok) throw Error(json.message)
     } catch(e: any){
